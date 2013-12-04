@@ -17,7 +17,7 @@ namespace SubscribeHandler
 
         private void CompleteSaga()
         {
-            if (Data.IsLienDocComplete && Data.IsLienDocComplete)
+            if (Data.IsLienDocComplete && Data.IsLoanDocComplete)
             {
                 Console.WriteLine("Saga is now complete");
                 MarkAsComplete();
