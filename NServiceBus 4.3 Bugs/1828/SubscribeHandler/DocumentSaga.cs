@@ -9,7 +9,7 @@ namespace SubscribeHandler
     {
         public void Handle(ILoanDocumentPublishedEvent message)
         {
-            Console.WriteLine("Loan Doument received -- {0}", message.Name);
+            Console.WriteLine("Loan Document received -- {0} {1}", message.Name, message.Type);
             Data.Name = message.Name;
             Data.IsLoanDocComplete = true;
             CompleteSaga();
@@ -26,7 +26,7 @@ namespace SubscribeHandler
 
         public void Handle(ILienDocumentPublishedEvent message)
         {
-            Console.WriteLine("Lien Doument received -- {0}", message.Name);
+            Console.WriteLine("Lien Document received -- {0} {1}", message.Name , message.Type);
            
             Data.Name = message.Name;
             Data.IsLienDocComplete = true;
