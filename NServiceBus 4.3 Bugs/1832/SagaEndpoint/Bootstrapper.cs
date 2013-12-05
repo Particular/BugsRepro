@@ -11,6 +11,7 @@ namespace SagaEndpoint
         public void Start()
         {
             int index = 1;
+            Console.WriteLine("Press Enter to publish derived events");
             while (Console.ReadLine() != null)
             {
                 Bus.Publish<IDerivedType1Event>(m => { m.Name = string.Format("Index:{0}", index++); });
