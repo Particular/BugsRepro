@@ -2,5 +2,6 @@
 {
     public interface ILienDocumentPublishedEvent : IDocumentPublishedEvent
     {
+        string Type { get; set; }
     }
 }

@@ -23,6 +23,7 @@ namespace LoanPublishHandler
             _serviceBus.Publish<ILoanDocumentPublishedEvent>(e =>
                 {
                     e.Name = message.DocumentName;
+                    e.Type = "ILoanDocumentPublishedEvent";
                 });
         }
     }

@@ -20,6 +20,8 @@ namespace LienPublishHandler
             _serviceBus.Publish<ILienDocumentPublishedEvent>(e =>
             {
                 e.Name = message.DocumentName;
+                e.Type = "ILienDocumentPublishedEvent";
+
             });
         }
     }
