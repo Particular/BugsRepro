@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Returner", "Returner\Returner.csproj", "{76E74EA5-8599-4362-8C86-C90A10D14A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sender", "Sender\Sender.csproj", "{747D625D-02DF-4B3B-8102-2DEA8D37D28C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{078A8FBA-1EEC-4923-8213-147C955FCFE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E74EA5-8599-4362-8C86-C90A10D14A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E74EA5-8599-4362-8C86-C90A10D14A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E74EA5-8599-4362-8C86-C90A10D14A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E74EA5-8599-4362-8C86-C90A10D14A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76E74EA5-8599-4362-8C86-C90A10D14A3F} = {078A8FBA-1EEC-4923-8213-147C955FCFE1}
+		{747D625D-02DF-4B3B-8102-2DEA8D37D28C} = {078A8FBA-1EEC-4923-8213-147C955FCFE1}
+	EndGlobalSection
+EndGlobal
