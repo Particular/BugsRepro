@@ -59,13 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{4953b20a-7e45-43bd-aaaf-67418fbbf9f4}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Publisher1.Messages\Publisher1.Messages.csproj">
+    <ProjectReference Include="..\Publisher.Messages\Publisher.Messages.csproj">
       <Project>{478b7659-e4ab-457a-ab29-9d5db4a24184}</Project>
-      <Name>Publisher1.Messages</Name>
+      <Name>Publisher.Messages</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

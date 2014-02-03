@@ -1,15 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher1", "Publisher1\Publisher1.csproj", "{F2BB7471-EA14-46E0-B224-3545F945EFA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publisher.csproj", "{F2BB7471-EA14-46E0-B224-3545F945EFA0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "Subscriber\Subscriber.csproj", "{747D625D-02DF-4B3B-8102-2DEA8D37D28C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{078A8FBA-1EEC-4923-8213-147C955FCFE1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher1.Messages", "Publisher1.Messages\Publisher1.Messages.csproj", "{478B7659-E4AB-457A-AB29-9D5DB4A24184}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher.Messages", "Publisher.Messages\Publisher.Messages.csproj", "{478B7659-E4AB-457A-AB29-9D5DB4A24184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +21,6 @@ Global
 		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{747D625D-02DF-4B3B-8102-2DEA8D37D28C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{478B7659-E4AB-457A-AB29-9D5DB4A24184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{478B7659-E4AB-457A-AB29-9D5DB4A24184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{478B7659-E4AB-457A-AB29-9D5DB4A24184}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,10 +28,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{747D625D-02DF-4B3B-8102-2DEA8D37D28C} = {078A8FBA-1EEC-4923-8213-147C955FCFE1}
-		{F2BB7471-EA14-46E0-B224-3545F945EFA0} = {078A8FBA-1EEC-4923-8213-147C955FCFE1}
-		{478B7659-E4AB-457A-AB29-9D5DB4A24184} = {078A8FBA-1EEC-4923-8213-147C955FCFE1}
 	EndGlobalSection
 EndGlobal

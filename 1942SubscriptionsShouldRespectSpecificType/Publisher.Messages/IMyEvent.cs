@@ -1,4 +1,4 @@
-﻿namespace Common.Messages
+﻿namespace Publisher.Messages
 {
     public interface IMyEvent
     {

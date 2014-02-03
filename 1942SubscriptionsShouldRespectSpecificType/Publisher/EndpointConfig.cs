@@ -1,6 +1,6 @@
 using System;
 
-namespace Shared
+namespace Publisher
 {
     using NServiceBus;
 

@@ -1,7 +1,7 @@
 ﻿using NServiceBus;
-using Publisher1.Messages;
+using Publisher.Messages;
 
-namespace Publisher1
+namespace Publisher
 {
     public class Initiator : IWantToRunWhenBusStartsAndStops
     {

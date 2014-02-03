@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
-using Common.Messages;
 using NServiceBus;
-using Publisher1.Messages;
+using Publisher.Messages;
 
 namespace Subscriber
 {

@@ -7,8 +7,8 @@
     <ProjectGuid>{478B7659-E4AB-457A-AB29-9D5DB4A24184}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Publisher1.Messages</RootNamespace>
-    <AssemblyName>Publisher1.Messages</AssemblyName>
+    <RootNamespace>Publisher.Messages</RootNamespace>
+    <AssemblyName>Publisher.Messages</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,14 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMyEvent.cs" />
     <Compile Include="TwoEvent.cs" />
     <Compile Include="OneEvent.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{4953B20A-7E45-43BD-AAAF-67418FBBF9F4}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
