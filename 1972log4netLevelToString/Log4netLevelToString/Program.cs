@@ -17,7 +17,7 @@ class Program
 
     static UnicastBus CreateBus()
     {
-        Configure.GetEndpointNameAction = () => "IMutateIncomingMessagesIgnored";
+        Configure.GetEndpointNameAction = () => "Log4netLevelToString";
 
         XmlConfigurator.Configure();
         var configure = Configure.With()
