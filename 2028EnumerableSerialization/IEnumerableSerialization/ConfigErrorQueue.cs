@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using NServiceBus;
-using NServiceBus.Config;
+﻿using NServiceBus.Config;
 using NServiceBus.Config.ConfigurationSource;
 
 class ConfigErrorQueue : IProvideConfiguration<MessageForwardingInCaseOfFaultConfig>
@@ -12,9 +10,4 @@ class ConfigErrorQueue : IProvideConfiguration<MessageForwardingInCaseOfFaultCon
                    ErrorQueue = "error"
                };
     }
-}
-
-public class MyMessage : IMessage
-{
-    public IEnumerable<string> Foo { get; set; }
 }
