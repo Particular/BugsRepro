@@ -3,6 +3,7 @@ using System.Diagnostics;
 using NHibernate.Tool.hbm2ddl;
 using NhSessionSharingIssue.NServiceBusSerilog;
 using NServiceBus;
+using NServiceBus.Features;
 using NServiceBus.Installation.Environments;
 using Serilog;
 using Serilog.Events;
@@ -22,6 +23,7 @@ class Program
         Configure.GetEndpointNameAction = () => "NhSessionSharingIssue";
 
         Configure.Serialization.Json();
+        Configure.Features.Enable<Sagas>();
 
         NHibernateSessionBuilder.GetFluentConfiguration()
          .ExposeConfiguration(

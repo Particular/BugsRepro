@@ -7,7 +7,7 @@ namespace NhSessionSharingIssue
 
 
 
-    public class MySaga : Saga<MySagaData>, IHandleMessages<MyMessage>
+    public class MySaga : Saga<MySagaData>, IAmStartedByMessages<MyMessage>
     {
         static ILogger logger = Log.ForContext<MyHandler>();
 
