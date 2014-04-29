@@ -2,28 +2,40 @@ using NServiceBus;
 using NServiceBus.Saga;
 using Serilog;
 
-public class MySaga : Saga<MySagaData>, IHandleMessages<MyMessage>
+namespace NhSessionSharingIssue
 {
-    static ILogger logger = Log.ForContext<MyHandler>();
 
-    public void Handle(MyMessage message)
+
+
+    public class MySaga : Saga<MySagaData>, IHandleMessages<MyMessage>
     {
-        logger.Information("Hello From MySaga");
-        int id;
-        using (var sessionFactory = NHibernateSessionBuilder.BuildFactory())
+        static ILogger logger = Log.ForContext<MyHandler>();
+
+        public void Handle(MyMessage message)
         {
-            using (var session = sessionFactory.OpenSession())
+            logger.Information("Hello From MySaga");
+            int id;
+            using (var sessionFactory = NHibernateSessionBuilder.BuildFactory())
             {
-                var product = new Product {Name = "Foo"};
-                session.Save(product);
-                id = product.Id;
+                using (var session = sessionFactory.OpenSession())
+                {
+                    var product = new Product { Name = "Foo" };
+                    session.Save(product);
+                    id = product.Id;
+                }
+                using (var session = sessionFactory.OpenSession())
+                {
+                    var product = session.Load<Product>(id);
+                    logger.Information("Loaded " + product.Name);
+                }
+                logger.Information("Successfully Savedb and retrieved from DB");
             }
-            using (var session = sessionFactory.OpenSession())
-            {
-                var product = session.Load<Product>(id);
-                logger.Information("Loaded " + product.Name);
-            }
-            logger.Information("Successfully Savedb and retrieved from DB");
         }
     }
+
+    public class MySagaData : ContainSagaData
+    {
+    }
+
 }
+

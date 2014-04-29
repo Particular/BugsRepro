@@ -83,7 +83,6 @@
     <Compile Include="MyHandler.cs" />
     <Compile Include="MyMessage.cs" />
     <Compile Include="MySaga.cs" />
-    <Compile Include="MySagaData.cs" />
     <Compile Include="NHibernateSessionBuilder.cs" />
     <Compile Include="NServiceBusSerilog\Logger.cs" />
     <Compile Include="NServiceBusSerilog\LoggerFactory.cs" />
