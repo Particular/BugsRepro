@@ -31,7 +31,8 @@ class ProgramService : ServiceBase
     protected override void OnStart(string[] args)
     {
         Configure.GetEndpointNameAction = () => "StackTraceRepro";
-        LoggingConfig.ConfigureLogging();
+
+        Logging.ConfigureLogging();
 
         Configure.Serialization.Json();
 
