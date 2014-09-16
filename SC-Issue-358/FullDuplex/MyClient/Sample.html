@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Particular Developer Portal</title>
+    <meta name="keywords" content="" />
+    <meta name="assemblyVersion" content="2.0.0+611.Branch.master.Sha.08a73937d78ebb63cad7f89f28562c349bd3a8ff" />
+    <meta name="lastRefresh" content="Mon, 15 Sep 2014 03:31:48 GMT" />
+    <meta name="lastShaPrefix" content="f37208a" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,900,700|Dosis:400,500,600,700|Lato:100,300,400,700,800,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" />
+    <link rel="stylesheet" href="/content/css/style.css" />
+    <link rel="shortcut icon" href="/content/images/32x32.ico" />
+    <!-- Google Analytics -->
+    <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-20451773-2', 'particular.net');
+	ga('send', 'pageview');
+    </script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="row clearfix">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="/container-fluid">
+
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="brand" href="http://particular.net">
+                                <img src="/content/images/particularlogo.png">
+                            </a>
+                            &nbsp;
+                            <a href="/" class="img">
+                                <img src="/content/images/developerportal.png">
+                                <img src="/content/images/developerportalhover.png" class="hover">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <form class="navbar-form navbar-right" role="search" action="/search" method="GET">
+                                <div class="form-group">
+                                    <input type="text" class="txtSearchBox" name="q" placeholder="search" value="">
+                                </div>
+                                <button type="submit" class="searchButton"><img src="/content/images/search.png" /></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a href="http://particular.net/support" class="dropdown-toggle p-menu-button" data-toggle="dropdown">Services <b class="caret"></b></a>
+                                    <ul class="dropdown-menu p-dropdown-menu">
+                                        <li><a href="http://particular.net/support">Support</a></li>
+                                        <li><a href="http://particular.net/consulting">Consulting</a></li>
+                                        <li><a href="http://particular.net/onsite-training">On-site training</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown ">
+                                    <a href="http://particular.net/champions" class="dropdown-toggle p-menu-button" data-toggle="dropdown">Community <b class="caret"></b></a>
+                                    <ul class="dropdown-menu p-dropdown-menu">
+                                        <li><a href="http://particular.net/blog">Particular Blog</a></li>
+                                        <li><a href="http://particular.net/DiscussionGroup">Discussion Group</a></li>
+                                        <li><a href="http://particular.net/champions">Community Champions</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-12 column contentArea">
+                    <style>
+                        a.img img.hover {
+                            display: none;
+                        }
+
+                        a.img:hover img {
+                            display: none;
+                        }
+
+                            a.img:hover img.hover {
+                                display: inline;
+                            }
+
+                        .small.button {
+                            line-height: 45px;
+                            font-size: 16px;
+                            padding-left: 15px;
+                            font-family: 'Lato',Bold;
+                            display: inline-block;
+                        }
+
+                            .small.button a {
+                                display: block;
+                                color: white;
+                                line-height: 45px;
+                                width: 215px;
+                                background-color: #00a3c4;
+                                border-bottom: 5px solid #0071a0;
+                                clear: both;
+                                text-align: center;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                font-weight: 700;
+                            }
+
+                                .small.button a:hover {
+                                    background-color: #03AFF8;
+                                }
+
+                        .block.black a, .block.middle a, .productcolumn a {
+                            color: inherit;
+                            white-space: nowrap;
+                        }
+
+                        .block {
+                            width: 100%;
+                            background-color: rgb(233,240,242);
+                            padding: 21px;
+                            margin-bottom: 2px;
+                            font-family: 'Lato';
+                        }
+
+                            .block.top img, .productcolumn img {
+                                float: left;
+                            }
+
+                            .block.black img {
+                                float: inherit;
+                            }
+
+                            .block.top .button {
+                                float: right;
+                                width: 225px;
+                                font-size: 15px;
+                            }
+
+                            .block.middle .ic {
+                                min-width: 25%;
+                                float: left;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: bold;
+                                line-height: 50px;
+                                color: rgb(0,114,156);
+                            }
+
+                            .block.black {
+                                margin-top: -2px;
+                                margin-bottom: 0px;
+                                width: 100%;
+                                clear: both;
+                                background-color: rgb(26,26,26);
+                                font-size: 16px;
+                                font-weight: bold;
+                                padding-top: 13px;
+                                padding-bottom: 13px;
+                                line-height: 30px;
+                            }
+
+                        span.blue {
+                            color: rgb(0,163,196);
+                            padding-right: 30px;
+                            display: inline-block;
+                        }
+
+                        .block.black span img {
+                            padding-left: 0px;
+                            padding-right: 5px;
+                            margin-top: -3px;
+                        }
+
+                        .productcolumn .black {
+                            font-size: 14px;
+                        }
+
+                        .block .left2 {
+                            width: 60%;
+                            float: left;
+                            border-right: 2px solid rgb(218,222,222);
+                            min-width: 460px;
+                        }
+
+                        .block .right1 {
+                            float: left;
+                            padding-left: 20px;
+                        }
+
+                            .block .right1 h3 {
+                                padding-top: 7px;
+                            }
+
+                        .block h2 {
+                            clear: both;
+                            font-size: 20px !important;
+                            font-family: 'Dosis', Semibold;
+                            padding-bottom: 20px;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
+                        }
+
+                        .block h3 {
+                            font-weight: bold;
+                            font-size: 17px;
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            color: rgb(0,114,156);
+                        }
+
+                        .block h4 {
+                            font-size: 16px !important;
+                            font-family: 'Dosis', bold;
+                            font-weight: bold;
+                            margin-top: 0px;
+                        }
+
+                        .block h5 {
+                            color: rgb(0,114,156);
+                            font-size: 14px;
+                            font-weight: bold;
+                            padding-left: 28px;
+                            padding-top: 5px;
+                        }
+
+                        .block p {
+                            font-size: 14px;
+                            color: rgb(77,77,77);
+                        }
+
+                        .block .right1 img, .block .left2 img {
+                            float: left;
+                            margin: 0px 13px 23px 0px;
+                        }
+
+                        .productcolumn {
+                            width: 32%;
+                            margin-right: 2%;
+                            float: left;
+                        }
+
+                            .productcolumn.header {
+                                margin-top: 35px;
+                            }
+
+                            .productcolumn.last {
+                                margin-right: 0px;
+                            }
+
+                        .productcolumnc {
+                            overflow: hidden;
+                            clear: both;
+                        }
+
+                            .productcolumnc .productcolumn {
+                                padding-bottom: 1000px;
+                                margin-bottom: -1000px;
+                            }
+
+                            .productcolumnc ul {
+                                list-style: none;
+                                margin-left: 0px;
+                                padding-left: 0px;
+                            }
+
+                            .productcolumnc li {
+                                color: rgb(0,114,156) !important;
+                                font-size: 14px;
+                                font-weight: bold;
+                                padding-bottom: 7px;
+                                padding-left: 12px;
+                                text-indent: -12px;
+                            }
+
+                                .productcolumnc li:before {
+                                    content: "• ";
+                                    color: rgb(0,114,156);
+                                }
+                    </style>
+
+                    <div class="block top">
+                        <a href="/nservicebus"><img src="/images/home/nsb.png" style="max-width: 43%"></a>
+                        <div class="small button">
+                            <a class="blue" href="/nservicebus/">Documentation topics</a>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="block middle">
+                        <div class="ic">
+                            <a href="/nservicebus/nservicebus-step-by-step-guide" class="img">
+                                <img src="/images/home/gettingstarted.png"><img src="/images/home/gettingstartedhover.png" class="hover"><br>
+                                Getting Started &rarr;
+                            </a>
+                        </div>
+                        <div class="ic">
+                            <a href="http://particular.net/Videos-and-Presentations" class="img">
+                                <img src="/images/home/introvideos.png"><img src="/images/home/introvideoshover.png" class="hover"><br>
+                                Intro Videos &rarr;
+                            </a>
+                        </div>
+                        <div class="ic">
+                            <a href="http://particular.net/HandsOnLabs" class="img">
+                                <img src="/images/home/hol.png"><img src="/images/home/holhover.png" class="hover"><br>
+                                Hands-On Labs &rarr;
+                            </a>
+                        </div>
+                        <div class="ic">
+                            <a href="/platform/samples/" class="img rarr">
+                                <img src="/images/home/samples.png"><img src="/images/home/sampleshover.png" class="hover"><br>
+                                Samples &rarr;
+                            </a>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="block black">
+                        <span class="blue"><a href="https://github.com/Particular/NServiceBus/releases"><img src="/images/home/releasenotes.png"> Release notes</a></span><span class="blue"><a href="http://particular.net/downloads"><img src="/images/home/download.png"> Downloads</a></span>
+                    </div>
+                    <div class="block middle">
+                        <div class="left2">
+                            <h2>External training resources </h2>
+                            <a href="http://pluralsight.com/training/Courses/TableOfContents/nservicebus" class="img">
+                                <img src="/images/home/videossmall.png">
+                                <img src="/images/home/videossmallhover.png" class="hover">
+                                <h3>Pluralsight Introduction to NServiceBus &rarr;</h3>
+                            </a>
+                            <p>6hrs with Andreas Öhlund, Lead developer of NServiceBus</p>
+                            <div style="clear: both"></div>
+                            <a href="http://www.packtpub.com/build-distributed-software-systems-using-dot-net-enterprise-service-bus/book" class="img">
+                                <img src="/images/home/book.png">
+                                <img src="/images/home/bookhover.png" class="hover">
+                                <h3>Learn NServiceBus &rarr;</h3>
+                            </a>
+                            <p>Book by David Boike. Register and get the first 3 chapters free</p>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="right1">
+                            <h2>Community help</h2>
+                            <a href="http://stackoverflow.com/questions/tagged/nservicebus" class="img">
+                                <img src="/images/home/stackoverflowbig.png">
+                                <img src="/images/home/stackoverflowbighover.png" class="hover">
+                                <h3>StackOverflow &rarr;</h3>
+                            </a>
+                            <div style="clear: both"></div>
+                            <a href="https://groups.google.com/forum/#!forum/particularsoftware" class="img">
+                                <img src="/images/home/discussion.png">
+                                <img src="/images/home/discussionhover.png" class="hover">
+                                <h3>Discussion group &rarr;</h3>
+                            </a>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="productcolumn header">
+                        <div class="block top">
+                            <a href="/servicematrix/">
+                                <img src="/images/home/sm.png">
+                            </a>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <div class="productcolumn header">
+                        <div class="block top">
+                            <a href="/serviceinsight/">
+                                <img src="/images/home/si.png">
+                            </a>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <div class="productcolumn header last">
+                        <div class="block top">
+                            <a href="/servicepulse/">
+                                <img src="/images/home/sp.png">
+                            </a>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <div class="productcolumnc">
+                        <div class="productcolumn block">
+                            <p><h4>Generate a fully functional distributed application skeleton in a matter of minutes</h4></p>
+                            <ul>
+                                <li><a href="/servicematrix/getting-started-with-servicematrix-2.0">Getting Started</a></li>
+                                <li><a href="/servicematrix/getting-started-with-nservicebus-using-servicematrix-2.0-publish-subscribe">Publish/Subscribe</a></li>
+                                <li><a href="/servicematrix/getting-started-with-nservicebus-using-servicematrix-2.0-fault-tolerance">Fault Tolerance</a></li>
+                            </ul>
+                            <a href="/servicematrix/"><h3>Learn more &rarr;</h3></a>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="productcolumn block">
+                            <p><h4>Complete under-the-hood visualization of the your system&#39;s behavior</h4></p>
+                            <ul>
+                                <li><a href="/serviceinsight/getting-started-overview">Getting Started</a></li>
+                                <li><a href="/servicematrix/servicematrix-serviceinsight">Interaction with ServiceMatrix</a></li>
+                                <li><a href="/serviceinsight/application-invocation">Application invocation</a></li>
+                            </ul>
+                            <a href="/serviceinsight/"><h3>Learn more &rarr;</h3></a>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div class="productcolumn last block">
+                            <p><h4>Real-time monitoring that is custom tailored to fit your distributed systems</h4></p>
+                            <ul>
+                                <li><a href="/servicepulse/intro-endpoints-heartbeats">Monitoring Endpoints</a></li>
+                                <li><a href="/servicepulse/intro-failed-messages">Handling Failed Messages</a></li>
+                                <li><a href="/servicepulse/intro-endpoints-custom-checks">Introduction to Custom Checks</a></li>
+                            </ul>
+                            <a href="/servicepulse/"><h3>Learn more &rarr;</h3></a>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                    <div class="productcolumn">
+                        <div class="block">
+                            <h4>Community help</h4>
+                            <a href="http://stackoverflow.com/questions/tagged/ServiceMatrix" class="img">
+                                <img src="/images/home/stackoverflowsmall.png">
+                                <img src="/images/home/stackoverflowsmallhover.png" class="hover">
+                                <h5>StackOverflow &rarr;</h5>
+                            </a>
+                        </div>
+                        <div class="block black">
+                            <span class="blue"><a href="https://github.com/Particular/ServiceMatrix/releases"><img src="/images/home/releasenotes.png"> Release notes</a></span><span class="blue"><a href="http://particular.net/downloads"><img src="/images/home/download.png"> Downloads</a></span>
+                        </div>
+                    </div>
+                    <div class="productcolumn">
+                        <div class="block">
+                            <h4>Community help</h4>
+                            <a href="http://stackoverflow.com/questions/tagged/ServiceInsight" class="img">
+                                <img src="/images/home/stackoverflowsmall.png">
+                                <img src="/images/home/stackoverflowsmallhover.png" class="hover">
+                                <h5>StackOverflow &rarr;</h5>
+                            </a>
+                        </div>
+                        <div class="block black">
+                            <span class="blue"><a href="https://github.com/Particular/ServiceInsight/releases"><img src="/images/home/releasenotes.png"> Release notes</a></span><span class="blue"><a href="http://particular.net/downloads"><img src="/images/home/download.png"> Downloads</a></span>
+                        </div>
+                    </div>
+                    <div class="productcolumn last">
+                        <div class="block">
+                            <h4>Community help</h4>
+                            <a href="http://stackoverflow.com/questions/tagged/ServicePulse" class="img">
+                                <img src="/images/home/stackoverflowsmall.png">
+                                <img src="/images/home/stackoverflowsmallhover.png" class="hover">
+                                <h5>StackOverflow &rarr;</h5>
+                            </a>
+                        </div>
+                        <div class="block black">
+                            <span class="blue"><a href="https://github.com/Particular/ServicePulse/releases"><img src="/images/home/releasenotes.png"> Release notes</a></span><span class="blue"><a href="http://particular.net/downloads"><img src="/images/home/download.png"> Downloads</a></span>
+                        </div>
+                    </div>
+                    <div style="clear: both; padding-top: 35px"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer container">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a class="first" href="http://particular.net/nservicebus">Products</a></li>
+                        <li><a href="http://particular.net/service-platform">The Service Platform</a></li>
+                        <li><a href="http://particular.net/nservicebus">NServiceBus</a></li>
+                        <li><a href="http://particular.net/ServiceMatrix">ServiceMatrix</a></li>
+                        <li><a href="http://particular.net/ServiceInsight">ServiceInsight</a></li>
+                        <li><a href="http://particular.net/licensing">Licensing</a></li>
+                        <li><a href="http://particular.net/downloads">Downloads</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a class="first" href="http://particular.net/support">Services</a></li>
+                        <li><a href="http://particular.net/support">Support</a></li>
+                        <li><a href="http://particular.net/consulting">Consulting</a></li>
+                        <li><a href="http://particular.net/onsite-training" target="_blank">On-site training</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a class="first" href="http://docs.particular.net/">Resources</a></li>
+                        <li><a href="/">Documentation</a></li>
+                        <li><a href="http://particular.net/HandsOnLabs">Hands-on labs</a></li>
+                        <li><a href="http://particular.net/Videos-and-Presentations">Videos and Presentations</a></li>
+                        <li><a href="http://particular.net/contactus#ask-a-question">Ask a question</a></li>
+                        <li><a href="http://particular.net/sourcecode">Source code</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a class="first" href="http://particular.net/blog">Community</a></li>
+                        <li><a href="http://particular.net/blog">Particular blog</a></li>
+                        <li><a href="http://particular.net/DiscussionGroup">Discussion group</a></li>
+                        <li><a href="http://particular.net/champions" target="_blank">Community Champions</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a class="first" href="http://particular.net/about">Company</a></li>
+                        <li><a href="http://particular.net/about">About</a></li>
+                        <li><a href="http://particular.net/customers">Customers</a></li>
+                        <li><a href="http://particular.net/casestudies">Case Studies</a></li>
+                        <li><a href="http://particular.net/partners">Partners</a></li>
+                        <li><a href="http://particular.net/Leadership">Leadership</a></li>
+                        <li><a href="http://particular.net/ContactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">&copy; Particular Software Limited. All rights reserved | <a href="http://particular.net/Privacy" style="color: rgb(145, 158, 158);">Privacy Policy</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+    <script src="/content/js/documentation.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
