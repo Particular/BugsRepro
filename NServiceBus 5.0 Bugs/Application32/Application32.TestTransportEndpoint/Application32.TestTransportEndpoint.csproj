@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9710E160-856C-40E8-A8CF-414649E1FC2D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Application32.TestTransportEndpoint</RootNamespace>
+    <AssemblyName>Application32.TestTransportEndpoint</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.5.0.2\lib\net45\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Host">
+      <HintPath>..\packages\NServiceBus.Host.5.0.2\lib\net45\NServiceBus.Host.exe</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Transports.RabbitMQ">
+      <HintPath>..\packages\NServiceBus.RabbitMQ.2.0.1\lib\net45\NServiceBus.Transports.RabbitMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\packages\RabbitMQ.Client.3.3.5\lib\net30\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EndpointConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <ItemGuid>ab53b535-d8f6-4491-804d-62325de5a7cb</ItemGuid>
+    </Compile>
+    <Compile Include="EndpointConfig.generated.cs">
+      <DependentUpon>EndpointConfig.cs</DependentUpon>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <ItemGuid>b8fa5854-5a46-4049-b140-020aa75e3cbd</ItemGuid>
+    </Compile>
+    <Compile Include="Infrastructure\MessageConventions.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <ItemGuid>93017aaf-c55f-4770-a767-6d648a8f6e31</ItemGuid>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Infrastructure\INServiceBusComponent.cs" />
+    <Compile Include="TransportConfig.cs">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <ItemGuid>ea4306c1-71d1-4842-9255-bf20986d17b5</ItemGuid>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <ItemGuid>797b501d-ac58-4ef3-882f-12b85245dee4</ItemGuid>
+    </None>
+    <Content Include="Infrastructure\Logging.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>5a9be0a9-8ac9-49b5-ae1c-4198babfc412</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MasterNodeConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>d418cd05-f366-46c8-b666-aa6897257788</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\MessageForwardingInCaseOfFaultConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>4be18ca3-312d-484c-a8dc-48c6805ad456</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>e0826116-103a-429a-a395-f35c705cd40b</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\UnicastBusConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>c985341f-3e79-40ef-8454-4129108281fd</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\TransportConnectionString.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>52f1cc7d-624a-4a30-ae88-f63c1886a834</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\SecondLevelRetriesConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>f16239a3-e716-4141-9c8a-66b3dc15580f</ItemGuid>
+    </Content>
+    <Content Include="Infrastructure\GeneratedCode\Config\AuditConfig.config">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/Application32/Element/c:\development\junk\Application32\Application32.slnbldr%252f9ce40c76-1e90-42f8-96d6-6d05ac02c981</SourceModelReference>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ItemGuid>b3f5a4d2-6bc6-4124-ac6a-1e7d4046799f</ItemGuid>
+    </Content>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProjectDir)$(OutputPath)NServiceBus.Host.exe</StartProgram>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
