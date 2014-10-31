@@ -12,6 +12,7 @@ class Program
         busConfiguration.UseSerialization<JsonSerializer>();
         busConfiguration.UsePersistence<InMemoryPersistence>();
         var standardKernel = new StandardKernel();
+
         busConfiguration.UseContainer<NinjectBuilder>(c => c.ExistingKernel(standardKernel));
         busConfiguration.EnableInstallers();
         var startableBus = Bus.Create(busConfiguration);
