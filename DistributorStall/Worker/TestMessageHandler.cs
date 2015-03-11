@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Threading;
+using System.ServiceModel;
 using Messages;
 using NServiceBus;
+using WcfService;
 
 namespace Worker
 {
@@ -9,8 +10,11 @@ namespace Worker
     {
         public void Handle(TestMessage message)
         {
-            Thread.Sleep(10000);
-            Console.WriteLine("Got message");
+            var channelFactory = new ChannelFactory<ISlowService>(new BasicHttpBinding(), "http://localhost:6666/Greeter");
+            var proxy = channelFactory.CreateChannel();
+            var greetings = proxy.Greet("Indu");
+            
+            Console.WriteLine(greetings);
         }
     }
 }
